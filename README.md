@@ -60,7 +60,21 @@
 npx github:cyberxiaowan/cyber-xiaowan
 ```
 
-安装器会检测本机可用的 Claude Code、Codex、Agents 和 DSH skill 目录；存在多个目标时会请你选择，已有安装默认不覆盖。
+安装器会检测本机可用的 Claude Code、Codex、Agents、DSH、Cursor 和 Grok Bot skill 目录；存在多个目标时会请你选择，已有安装默认不覆盖。
+
+## Grok Bot / Cursor
+
+赛博小晚也可以作为 Cursor Skill 或 Grok Bot Skill 使用。安装命令与其他宿主相同：
+
+```bash
+npx github:cyberxiaowan/cyber-xiaowan
+```
+
+安装器会检查 Claude Code、Codex、Agents、DSH、Cursor（`~/.cursor/skills`）和 Grok Bot（`~/.grok-bot/skills`）。多个目录可用时按编号选择一个目标；已有安装默认不覆盖。
+
+要指定目录，设置 `CYBER_XIAOWAN_SKILL_ROOTS`（多个路径用系统路径分隔符分开）。路径中的 `.cursor` 会标为 Cursor，`.grok-bot` 或 `grok` 会标为 Grok Bot。
+
+核心规则仍在 [`SKILL.md`](./SKILL.md) 与 [`references/`](./references/)：路由、判断方式和隐私边界不随宿主改变。
 
 ## 桌宠模式（实验性）
 
