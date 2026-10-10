@@ -25,7 +25,7 @@ function defaultRoots() {
     { kind: 'Agents', dir: path.join(home, '.agents', 'skills') },
     { kind: 'DSH', dir: path.join(home, '.dsh', 'skills') },
     { kind: 'Cursor', dir: path.join(home, '.cursor', 'skills') },
-    { kind: 'Grok Bot', dir: path.join(home, '.grok-bot', 'skills') },
+    { kind: 'Grok Build', dir: path.join(home, '.grok', 'skills') },
   ];
 }
 
@@ -41,7 +41,7 @@ function rootsFromEnv() {
     else if (lower.includes('.agents')) kind = 'Agents';
     else if (lower.includes('.dsh')) kind = 'DSH';
     else if (lower.includes('.cursor')) kind = 'Cursor';
-    else if (lower.includes('.grok-bot') || lower.includes('grok')) kind = 'Grok Bot';
+    else if (lower.includes('.grok')) kind = 'Grok Build';
     return { kind, dir };
   });
 }

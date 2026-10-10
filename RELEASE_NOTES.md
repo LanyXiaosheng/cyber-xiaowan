@@ -1,7 +1,7 @@
-# 本次增量更新：Grok Bot / Cursor
+# 本次增量更新：Grok Build / Cursor
 
-- 安装器新增 Cursor（`~/.cursor/skills`）与 Grok Bot（`~/.grok-bot/skills`）目标；多个目录可用时仍请你选择。
-- `CYBER_XIAOWAN_SKILL_ROOTS` 中的 `.cursor` 标为 Cursor，`.grok-bot` 或 `grok` 标为 Grok Bot。既有 Claude Code、Codex、Agents、DSH 目标不变。
+- 安装器新增 Cursor（`~/.cursor/skills`）与 Grok Build（`~/.grok/skills`）目标；多个目录可用时仍请你选择。
+- `CYBER_XIAOWAN_SKILL_ROOTS` 中的 `.cursor` 标为 Cursor，`.grok` 标为 Grok Build。既有 Claude Code、Codex、Agents、DSH 目标不变。
 - 核心规则仍在 `SKILL.md` 与 `references/`；路由、`START.md` 与隐私边界不变。
 
 # 本次增量更新：内容共创与对话节奏
